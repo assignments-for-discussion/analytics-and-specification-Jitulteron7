@@ -8,9 +8,11 @@ it('computes average of a list of numbers', ()=> {
 });
 // only testing 
 it('reports the average as NaN on an empty list', ()=> {
+  console.log(average([1, NaN, 2]),"average([1, NaN, 2])")
   expect(average([])).to.be.NaN;
 });
 
 it('ignores NaN in the input', ()=> {
+  
   expect(average([1, NaN, 2])).to.be.approximately(1.5, 0.01);
 });
