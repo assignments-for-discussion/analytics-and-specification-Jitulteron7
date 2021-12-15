@@ -6,7 +6,7 @@ it('computes average of a list of numbers', ()=> {
   // hence allowing a delta tolerance
   expect(average([1, 2, 3, 4])).to.be.approximately(2.5, 0.01);
 });
-
+// only testing 
 it('reports the average as NaN on an empty list', ()=> {
   expect(average([])).to.be.NaN;
 });
